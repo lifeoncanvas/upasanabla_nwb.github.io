@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background:white;
+
+}
+nav{
+    background:#DBA787 ;
+    margin-bottom: 170px;
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul{
+   
+    list-style:none;
+  margin-right: 40px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+ nav ul li{
+     float:left;
+     display: inline-block;
+    background: #DBA787; 
+    margin: 0 5px;
+
+ }
+ nav ul li a{
+     color:white;
+     text-decoration: none;
+     line-height:60px;
+     font-size:18px;
+    padding: 8px 15px;
+
+ }
+ nav ul li a:hover{
+     color: hsl(24, 29%, 52%);
+     border-radius: 5px;
+     text-decoration: none;
+     box-shadow:0 0 5px  hsl(24, 29%, 52%),
+                0 0 5px  #DBA787;
+ }
+ nav ul ul li a:hover{
+color: white;
+box-shadow: none;
+ }
+ nav ul ul{
+     position: absolute;
+     top:90px;
+     border-top: 3px solid cyan;
+     opacity: 0;
+     visibility: hidden;
+     transition: top .3s;
+ }
+ nav ul ul ul{
+     border-top: none;
+ }
+ nav ul li:hover > ul{
+    top:60px;
+ opacity: 1;
+ visibility: visible;
+ }
+ nav ul ul li{
+     position: relative;
+     margin: 0px;
+     width:150px;
+     float: none;
+     display: list-item;
+     border-bottom: 1px solid rgba(0,0,0,0.3);
+ }
+
+ nav ul ul li a{
+     line-height: 50px;
+
+ }
+  nav ul ul ul li{
+     position: relative;
+     top:-70px;
+     left: 150px;
+ }
+
+ nav ul li ul
+
+ #madenavbar .navbar-brand{
+    
+    color:black;
+    float: left;
+    margin-right: 200px;
+    text-align: center;
+    font-family: 'Niconne', cursive;
+    font-size:50px;
+    display: flex;
+    flex-direction:column;
+
+    position: relative;
+    font-weight: 700;
+    
+
+    letter-spacing: 10px;
+    
+
+}
+
+#madenavbar .navbar-brand:hover{
+    color:white;
+    
+    letter-spacing: 20px;
+    transition:0.6s;
+   
+}
+
+#madenavbar .navbar-brand span{
+    
+    font-family: 'Josefin Slab', serif;
+    }
+    #navbarMenu .search-box{
+        position: absolute;
+        color: white;
+        bottom: 20px;
+       right: 40px;
+        transform:translate(-50%, -50%);
+         background:rgba(0,0,0,0.4);
+        height: 30px;
+        border-radius: 50px;
+        padding: 10px;
+    }
+    
+    
+    #navbarMenu .search-btn{
+        color: white;
+        float: right;
+        
+        border-radius: 50%;
+        background: #f2ede4;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    
+    }
+    
+    
+    #navbarMenu .search-txt{
+        border:none;
+        background:none;
+        outline:none;
+        float: left;
+        padding: 0;
+        color: white;
+        font-size: 16px;
+        transition:0.4s;
+        line-height: 20px;
+        width: 200px;
+        align-items:center;
+        
+    
+    }
+    
+
+
+ @media (max-width:991px)
+ {
+    .navbar-toggle{
+        display: block;
+       
+       
+    }
+    .collapse{
+        transition:ease;
+        height: 100%;
+
+    }
+     nav ul li:hover ul{
+         margin-top:-60px;
+         position: relative;
+    }
+    nav ul ul li:hover ul{
+        position: relative;
+    }
+    nav ul li ul li{
+        width: 100%;
+        height:calc(100vh -50px);
+
+    }
+    nav ul{
+     display: block;
+    }
+ }
